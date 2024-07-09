@@ -19,6 +19,7 @@ const App = () => {
         if (index !== -1) {
           const newLocations = [...prevLocations];
           newLocations[index] = data;
+          console.log('admin view location',newLocations)
           return newLocations;
         } else {
           return [...prevLocations, data];
